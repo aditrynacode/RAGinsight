@@ -1,0 +1,8 @@
+{
+  "synonym_mappings": {},
+  "top_k_overrides": {
+    "default": 4
+  },
+  "system_prompt_additions": [],
+  "clarification_prompt_additions": []
+}
