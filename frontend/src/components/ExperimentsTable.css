@@ -1,0 +1,41 @@
+.experiments-panel {
+  padding: 18px;
+  margin-bottom: 16px;
+}
+
+.experiments-empty {
+  color: var(--text-secondary);
+  font-size: 13px;
+  margin: 10px 0 4px;
+}
+
+.experiments-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  font-size: 12.5px;
+}
+
+.experiments-table th {
+  text-align: left;
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-dim);
+  padding: 8px 10px;
+  border-bottom: 1px solid var(--border-bright);
+}
+
+.experiments-table td {
+  padding: 9px 10px;
+  border-bottom: 1px solid var(--border);
+}
+
+.experiments-table tr:last-child td { border-bottom: none; }
+
+.mono { font-family: var(--font-mono); }
+.dim { color: var(--text-dim); }
+
+.delta.good { color: var(--good); }
+.delta.bad { color: var(--bad); }

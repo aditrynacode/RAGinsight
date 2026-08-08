@@ -1,0 +1,108 @@
+.diagnosis-panel {
+  margin-top: 10px;
+  padding: 16px;
+  background: var(--panel-raised);
+  border: 1px solid var(--border-bright);
+  border-left: 2px solid var(--amber);
+  border-radius: var(--radius-lg);
+}
+
+.diagnosis-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.diagnosis-confidence {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--text-dim);
+}
+
+.diagnosis-reasoning {
+  margin: 0 0 14px;
+  color: var(--text-secondary);
+  font-size: 13.5px;
+}
+
+.diagnosis-fix {
+  padding: 12px;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  margin-bottom: 14px;
+}
+
+.diagnosis-fix p {
+  margin: 6px 0 0;
+  font-size: 13px;
+}
+
+.diagnosis-fix-target {
+  font-family: var(--font-mono);
+  font-size: 11.5px;
+  color: var(--text-dim) !important;
+}
+
+.diagnosis-impact {
+  margin-top: 10px;
+  font-size: 12px;
+  color: var(--text-dim);
+}
+
+.btn-primary {
+  background: var(--amber);
+  color: #1a1508;
+  border: none;
+  font-family: var(--font-mono);
+  font-size: 12.5px;
+  font-weight: 600;
+  padding: 9px 16px;
+  border-radius: var(--radius);
+  letter-spacing: 0.02em;
+}
+
+.btn-primary:hover { filter: brightness(1.08); }
+.btn-primary:disabled { opacity: 0.6; cursor: wait; }
+
+.diagnosis-error {
+  margin-top: 10px;
+  color: var(--bad);
+  font-family: var(--font-mono);
+  font-size: 12px;
+}
+
+.diagnosis-result {
+  margin-top: 14px;
+  padding-top: 14px;
+  border-top: 1px dashed var(--border-bright);
+}
+
+.score-compare {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.score-block { text-align: center; }
+
+.score-value {
+  font-family: var(--font-mono);
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.score-arrow {
+  color: var(--text-dim);
+  font-size: 18px;
+}
+
+.score-verdict {
+  margin-top: 10px;
+  font-family: var(--font-mono);
+  font-size: 12px;
+}
+
+.score-verdict.good { color: var(--good); }
+.score-verdict.bad { color: var(--bad); }
