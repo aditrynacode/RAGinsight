@@ -1,0 +1,7 @@
+rag.db
+chroma_db/
+dynamic_config.json
+.env
+venv/
+__pycache__/
+*.pyc
