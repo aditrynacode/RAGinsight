@@ -1,0 +1,33 @@
+:root {
+  /* Color — diagnostic-instrument palette, not the generic AI cream/terracotta */
+  --bg: #14161c;
+  --panel: #1b1e27;
+  --panel-raised: #21242f;
+  --border: #2c3040;
+  --border-bright: #3a3f52;
+
+  --text-primary: #e8e6de;
+  --text-secondary: #9a9dab;
+  --text-dim: #656a7c;
+
+  --amber: #e8a33d;
+  --amber-dim: #a8763262;
+
+  /* Failure-category color coding, used consistently across chat + dashboard */
+  --cat-retrieval: #e8a33d;
+  --cat-chunking: #7ca9d9;
+  --cat-ambiguous: #b98fd1;
+  --cat-generation: #e07a6c;
+  --cat-noinfo: #6b7280;
+
+  --good: #6fbf8b;
+  --bad: #e07a6c;
+
+  /* Type */
+  --font-display: "IBM Plex Mono", monospace;
+  --font-body: "IBM Plex Sans", sans-serif;
+  --font-mono: "IBM Plex Mono", monospace;
+
+  --radius: 3px;
+  --radius-lg: 6px;
+}

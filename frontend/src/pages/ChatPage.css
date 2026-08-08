@@ -1,0 +1,144 @@
+.chat-page {
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 140px);
+}
+
+.chat-history {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  margin-bottom: 20px;
+}
+
+.chat-empty {
+  padding: 40px 0;
+  text-align: center;
+}
+
+.chat-empty p {
+  color: var(--text-secondary);
+  margin: 8px 0 0;
+}
+
+.chat-turn {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.chat-question {
+  align-self: flex-end;
+  max-width: 70%;
+  background: var(--panel-raised);
+  border: 1px solid var(--border-bright);
+  border-radius: var(--radius-lg);
+  padding: 10px 14px;
+  font-size: 13.5px;
+}
+
+.chat-question-label {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--text-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 4px;
+}
+
+.chat-answer {
+  padding: 16px 18px;
+  max-width: 85%;
+}
+
+.chat-answer-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.chat-confidence {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--text-dim);
+}
+
+.chat-answer-text {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.6;
+  white-space: pre-wrap;
+}
+
+.chat-feedback-row {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.fb-btn {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  color: var(--text-secondary);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  padding: 5px 10px;
+  border-radius: var(--radius);
+}
+
+.fb-btn:hover:not(:disabled) { border-color: var(--border-bright); color: var(--text-primary); }
+.fb-btn:disabled { opacity: 0.55; cursor: default; }
+.fb-btn.active-up { color: var(--good); border-color: var(--good); }
+.fb-btn.active-down { color: var(--bad); border-color: var(--bad); }
+
+.fb-note-row {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.fb-note-row input {
+  flex: 1;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 8px 10px;
+  color: var(--text-primary);
+  font-size: 12.5px;
+}
+
+.diagnosis-loading {
+  margin-top: 10px;
+  font-family: var(--font-mono);
+  font-size: 11.5px;
+  color: var(--amber);
+}
+
+.chat-error {
+  color: var(--bad);
+  font-family: var(--font-mono);
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.chat-input-row {
+  display: flex;
+  gap: 10px;
+  position: sticky;
+  bottom: 0;
+  padding: 14px 0;
+  background: linear-gradient(var(--bg) 0 0);
+}
+
+.chat-input-row input {
+  flex: 1;
+  background: var(--panel);
+  border: 1px solid var(--border-bright);
+  border-radius: var(--radius-lg);
+  padding: 12px 14px;
+  color: var(--text-primary);
+  font-size: 13.5px;
+}
