@@ -75,12 +75,12 @@ That last loop is the whole point. This isn't just a RAG app, it's the thing tha
 ```
 backend/
   app/
-    database/       SQLAlchemy models and session (database.py, models.py)
-    rag/             ingestion, chunking, embeddings, vector store,
+    database/         SQLAlchemy models and session (database.py, models.py)
+    rag/              ingestion, chunking, embeddings, vector store,
                       retriever, LLM-judge evaluator, manufactured-failure
                       test loader
     llm/              LLM client
-    diagnostics/     diagnostic agent prompt, agent runner, fix applier
+    diagnostics/      diagnostic agent prompt, agent runner, fix applier
     services/         orchestration layer: query, feedback, eval,
                       experiment, and dynamic-config services
     routes/           FastAPI endpoints (ask, feedback, diagnostics,
@@ -98,7 +98,7 @@ frontend/
     pages/             Chat view, Ops dashboard
     components/        charts, diagnosis panel, chunk inspector, nav, etc.
     api/               fetch wrapper around every backend endpoint
-    styles/             design tokens and global styles
+    styles/            design tokens and global styles
     categoryMeta.js    shared failure-category labels/colors
     App.jsx, main.jsx
 ```
