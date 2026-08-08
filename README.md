@@ -95,7 +95,7 @@ backend/
 
 frontend/
   src/
-    pages/            Chat view, Ops dashboard
+    pages/             Chat view, Ops dashboard
     components/        charts, diagnosis panel, chunk inspector, nav, etc.
     api/               fetch wrapper around every backend endpoint
     styles/             design tokens and global styles
